@@ -1,0 +1,28 @@
+:root {
+  --cl-main-200: hsl(193, 38%, 86%);
+  --cl-main-500: hsl(217, 19%, 38%);
+  --cl-main-700: hsl(217, 19%, 24%);
+  --cl-main-900: hsl(218, 23%, 16%);
+
+  --cl-accent-300: hsl(150, 100%, 66%);
+}
+
+body {
+  background: var(--cl-main-900);
+}
+
+.advice {
+  background: var(--cl-main-700);
+}
+
+.advice__id {
+  color: var(--cl-accent-300);
+}
+
+.advice__text {
+  color: var(--cl-main-200);
+}
+
+.advice__button {
+  background: var(--cl-accent-300);
+}
