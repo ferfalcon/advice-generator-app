@@ -1,3 +1,8 @@
+const url = "https://api.adviceslip.com/advice";
+const adviceIdElement = "adviceId";
+const adviceElement = "advice";
+const newAdviceTrigger = "getNewAdvice";
+
 function writeElement(elementId: string, text: string) {
   const element = document.getElementById(elementId);
   if (element) {
@@ -5,17 +10,23 @@ function writeElement(elementId: string, text: string) {
   }
 }
 
-async function getData() {
-  const url = "https://api.adviceslip.com/advice";
-  const response = await fetch(url);
+function getNewAdvice(trigger: string) {
+  const element = document.getElementById(trigger);
+  if (element) {
+    element.addEventListener("click", () => getData(url));
+  }
+}
 
+async function getData(url: string) {
+  const response = await fetch(url);
   try {
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
     const result = await response.json();
-    writeElement("adviceId", result.slip.id)
-    writeElement("advice", result.slip.advice)
+
+    writeElement(adviceIdElement, result.slip.id);
+    writeElement(adviceElement, result.slip.advice);
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message);
@@ -23,4 +34,5 @@ async function getData() {
   }
 }  
 
-getData()
+getData(url);
+getNewAdvice(newAdviceTrigger);
