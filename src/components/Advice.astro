@@ -1,4 +1,5 @@
 ---
+const baseUrl = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 ---
 
 <main class="advice">
@@ -10,11 +11,18 @@
   </div>
 
   <picture class="advice__divider" aria-hidden="true">
-    <source media="(min-width: 48rem)" srcset="/pattern-divider-desktop.svg" />
-    <img src="/pattern-divider-mobile.svg" alt="" width="295" height="16" />
+    <source media="(min-width: 48rem)" srcset={`${baseUrl}pattern-divider-desktop.svg`} />
+    <img src={`${baseUrl}pattern-divider-mobile.svg`} alt="" width="295" height="16" />
   </picture>
 
   <button class="advice__button" id="getNewAdvice" type="button">
+    <img
+      class="advice__button-icon"
+      src={`${baseUrl}icon-dice.svg`}
+      alt=""
+      width="24"
+      height="24"
+    />
     <span class="sr-only">Get new advice</span>
   </button>
 </main>
