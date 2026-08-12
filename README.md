@@ -10,7 +10,8 @@
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
-  - [Project Structure](#project-structure)
+- [Local development](#local-development)
+- [Project Structure](#project-structure)
 - [Author](#author)
 
 ## Overview
@@ -47,6 +48,22 @@ Your users should be able to:
 
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
+## Local development
+
+This project requires Node.js 24 or newer and pnpm 11.21.0.
+
+```sh
+pnpm install
+pnpm dev
+```
+
+Create and preview a production build with:
+
+```sh
+pnpm build
+pnpm preview
+```
+
 ## Project Structure
 
 ```text
@@ -74,6 +91,8 @@ Your users should be able to:
 │   │    └── style.css
 ├── astro.config.mjs
 ├── package.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
 └── tsconfig.json
 ```
 

@@ -2,6 +2,10 @@
   "name": "advice-generator-app",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@11.21.0",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
