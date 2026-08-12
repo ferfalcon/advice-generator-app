@@ -1,13 +1,11 @@
 # Advice generator app
 
-This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db).
-
-![Design preview for the Advice generator app coding challenge](preview.jpg)
+![Design preview of the Advice generator app](preview.jpg)
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The job](#the-job)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -17,9 +15,9 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ## Overview
 
-### The challenge
+### The job
 
-The challenge is to build out this advice generator app using the [Advice Slip API](https://api.adviceslip.com) and get it looking as close to the design as possible.
+The job is to build out this advice generator app using the [Advice Slip API](https://api.adviceslip.com) and get it looking as close to the design as possible.
 
 Your users should be able to:
 
@@ -81,6 +79,5 @@ Your users should be able to:
 
 ## Author
 
-- LinkedIn - [Fernando Falcon](https://www.linkedin.com/in/fernandofalcon/)
 - Website - [ferfalcon.com](http://ferfalcon.com/)
-- Frontend Mentor - [@ferfalcon](https://www.frontendmentor.io/profile/ferfalcon/)
+- LinkedIn - [Fernando Falcon](https://www.linkedin.com/in/fernandofalcon/)
