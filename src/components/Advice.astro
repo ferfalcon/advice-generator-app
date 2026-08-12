@@ -2,9 +2,19 @@
 ---
 
 <main class="advice">
-  <p class="advice__id">advice #<span id="adviceId"></span></p>
-  <p class="advice__text">“<span id="advice">&nbsp;</span>”</p>
-  <button class="advice__button" id="getNewAdvice">
+  <div class="advice__text-container">
+    <p class="advice__id">advice #<span id="adviceId">117</span></p>
+    <p class="advice__text" aria-live="polite">
+      “<span id="advice">It is easy to sit up and take notice, what's difficult is getting up and taking action.</span>”
+    </p>
+  </div>
+
+  <picture class="advice__divider" aria-hidden="true">
+    <source media="(min-width: 48rem)" srcset="/pattern-divider-desktop.svg" />
+    <img src="/pattern-divider-mobile.svg" alt="" width="295" height="16" />
+  </picture>
+
+  <button class="advice__button" id="getNewAdvice" type="button">
     <span class="sr-only">Get new advice</span>
   </button>
 </main>
